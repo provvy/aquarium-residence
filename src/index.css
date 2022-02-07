@@ -1,13 +1,80 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  min-height: 100vh;
+  font-family: "Roboto", "Montserrat", "Raleway", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  user-select: none;
+  background: #f7f7f7;
+}
+
+input,
+button,
+textarea {
+  font-family: "Roboto", "Montserrat", "Raleway", "Helvetica Neue", sans-serif;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+body div.MuiPickersBasePicker-container svg {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+body div.MuiPickersBasePicker-container span {
+  font-size: 1.2rem;
+}
+
+body div.MuiPickersBasePicker-container span > p {
+  font-size: 1.4rem;
+}
+
+body div.MuiPickersBasePicker-container p {
+  font-size: 1.6rem;
+}
+
+body div.MuiPickersBasePicker-container h4 {
+  font-size: 3.4rem;
+}
+
+body div.MuiPickersBasePicker-container h6 {
+  font-size: 1.6rem;
+}
+
+body div.MuiPickersToolbar-toolbar {
+  background: #5da9ad;
+}
+
+body button.MuiPickersDay-current {
+  color: #3f51b5;
+}
+
+body button.MuiPickersDay-daySelected {
+  background: #5da9ad;
+  color: #fff;
+}
+
+body button.MuiPickersDay-daySelected:hover {
+  background: #5da9ad;
+}
+
+.item-enter {
+  opacity: 0;
+  transition: opacity 1s ease-in;
+}
+.item-enter-active {
+  opacity: 1;
+}
+.item-exit {
+  opacity: 1;
+  transition: opacity 1s ease-in;
+}
+.item-exit-active {
+  opacity: 0;
 }
